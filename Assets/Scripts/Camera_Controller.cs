@@ -8,11 +8,11 @@ public class Camera_Controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -1);
+        transform.position = new Vector3(player.transform.position.x, this.transform.position.y, player.transform.position.z);
 	}
 	
 	// Update is called once per frame
 	void LateUpdate () {
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -1);
+        transform.position = new Vector3(player.transform.position.x, this.transform.position.y, player.transform.position.z);
     }
 }
