@@ -98,10 +98,16 @@ public class Character_Input : MonoBehaviour
         print("#TRIGGERED!!!");
         print(collider.gameObject.tag);
 
-        if (collider.gameObject.name == "Door")
+        if (collider.gameObject.name == "ExitDoor")
         {
             print("Door Reached! Going To Next Level...");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        if (collider.gameObject.name == "EntranceDoor")
+        {
+            print("Door Reached! Going To Next Level...");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
 
         if (collider.gameObject.tag == "Ghost")
