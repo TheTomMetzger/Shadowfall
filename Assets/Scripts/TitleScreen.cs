@@ -13,7 +13,7 @@ public class TitleScreen : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetButtonDown("Submit"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

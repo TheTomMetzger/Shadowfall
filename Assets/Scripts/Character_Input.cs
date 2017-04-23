@@ -107,7 +107,14 @@ public class Character_Input : MonoBehaviour
         if (collider.gameObject.name == "EntranceDoor")
         {
             print("Door Reached! Going To Next Level...");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            if(SceneManager.GetActiveScene().name == "Level 11")
+            {
+                SceneManager.LoadScene("Title Screen");
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            }
         }
 
         if (collider.gameObject.tag == "Ghost")

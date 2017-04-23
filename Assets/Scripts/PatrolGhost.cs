@@ -21,16 +21,16 @@ public class PatrolGhost : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
-        if (Mathf.Abs(body.position.x - firstCoordinates.x) < .1 && Mathf.Abs(body.position.z - firstCoordinates.z) < .1 && currentCoordinates == 1){
+        if (Mathf.Abs(body.position.x - firstCoordinates.x) < .2 && Mathf.Abs(body.position.z - firstCoordinates.z) < .2 && currentCoordinates == 1){
             currentCoordinates = 2;
         }
-        else if (Mathf.Abs(body.position.x - secondCoordinates.x) < .1 && Mathf.Abs(body.position.z - secondCoordinates.z) < .1 && currentCoordinates == 2){
+        else if (Mathf.Abs(body.position.x - secondCoordinates.x) < .2 && Mathf.Abs(body.position.z - secondCoordinates.z) < .2 && currentCoordinates == 2){
             currentCoordinates = 3;
         }
-        else if (Mathf.Abs(body.position.x - thirdCoordinates.x) < .1 && Mathf.Abs(body.position.z - thirdCoordinates.z) < .1 && currentCoordinates == 3){
+        else if (Mathf.Abs(body.position.x - thirdCoordinates.x) < .2 && Mathf.Abs(body.position.z - thirdCoordinates.z) < .2 && currentCoordinates == 3){
             currentCoordinates = 4;
         }
-        else if (Mathf.Abs(body.position.x - fourthCoordinates.x) < .1 && Mathf.Abs(body.position.z - fourthCoordinates.z) < .1 && currentCoordinates == 4){
+        else if (Mathf.Abs(body.position.x - fourthCoordinates.x) < .2 && Mathf.Abs(body.position.z - fourthCoordinates.z) < .2 && currentCoordinates == 4){
             currentCoordinates = 1;
         }
 
