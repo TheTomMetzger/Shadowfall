@@ -10,6 +10,7 @@ public class PatrolGhost : MonoBehaviour
     public Vector3 thirdCoordinates;
     public Vector3 fourthCoordinates;
     private int currentCoordinates;
+    public float speed;
 
 
     // Use this for initialization
@@ -34,16 +35,16 @@ public class PatrolGhost : MonoBehaviour
         }
 
         if (currentCoordinates == 1){
-            body.position = Vector3.Lerp(body.position, firstCoordinates, .05f);
+            body.position = Vector3.Lerp(body.position, firstCoordinates, speed);
         }
         if (currentCoordinates == 2){
-            body.position = Vector3.Lerp(body.position, secondCoordinates, .05f);
+            body.position = Vector3.Lerp(body.position, secondCoordinates, speed);
         }
         if (currentCoordinates == 3){
-            body.position = Vector3.Lerp(body.position, thirdCoordinates, .05f);
+            body.position = Vector3.Lerp(body.position, thirdCoordinates, speed);
         }
         if (currentCoordinates == 4){
-            body.position = Vector3.Lerp(body.position, fourthCoordinates, .05f);
+            body.position = Vector3.Lerp(body.position, fourthCoordinates, speed);
         }
     }
 
