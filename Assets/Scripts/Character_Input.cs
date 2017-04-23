@@ -57,7 +57,7 @@ public class Character_Input : MonoBehaviour
             body.AddForce (-Vector3.forward * speed);
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             flipSwitch();   
         }
